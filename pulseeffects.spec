@@ -26,10 +26,11 @@ BuildRequires:  pkgconfig(lilv-0)
 BuildRequires:  pkgconfig(sigc++-2.0)
 BuildRequires:  pkgconfig(sndfile)
 
-Requires:       gstreamer1.0-ladspa
+#Need import.
+#Requires:       gstreamer1.0-ladspa
 Requires:       gstreamer1.0-plugins-good
-Requires:       ladspa-plugins-swh
-Requires:       lv2-calf-plugins
+#Requires:       ladspa-plugins-swh
+#Requires:       lv2-calf-plugins
 
 %description
 Limiters, compressor, reverberation, high-pass filter, low pass filter,
