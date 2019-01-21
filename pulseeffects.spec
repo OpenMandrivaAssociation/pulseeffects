@@ -27,7 +27,6 @@ BuildRequires:  pkgconfig(sigc++-2.0)
 BuildRequires:  pkgconfig(sndfile)
 
 #Need import.
-#Requires:       gstreamer1.0-ladspa
 Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-good
 #Requires:       ladspa-plugins-swh
