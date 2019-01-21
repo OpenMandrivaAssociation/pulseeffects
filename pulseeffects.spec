@@ -30,7 +30,7 @@ BuildRequires:  pkgconfig(sndfile)
 Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-good
 #Requires:       ladspa-plugins-swh
-Requires:       lv2-calf-plugins
+Recommends:     lv2-calf-plugins
 
 %description
 Limiters, compressor, reverberation, high-pass filter, low pass filter,
