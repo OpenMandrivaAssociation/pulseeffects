@@ -1,6 +1,6 @@
 Name:           pulseeffects
 Version:        4.4.6
-Release:        1
+Release:        2
 Summary:        Audio equalizer, filters and effects for Pulseaudio applications
 License:        GPLv3
 Group:          Sound/Mixers
@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(sndfile)
 
 #Need import.
 #Requires:       gstreamer1.0-ladspa
+Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-good
 #Requires:       ladspa-plugins-swh
 #Requires:       lv2-calf-plugins
