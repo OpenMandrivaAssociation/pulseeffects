@@ -1,6 +1,6 @@
 Name:           pulseeffects
-Version:        4.4.6
-Release:        4
+Version:        4.7.0
+Release:        1
 Summary:        Audio equalizer, filters and effects for Pulseaudio applications
 License:        GPLv3
 Group:          Sound/Mixers
@@ -69,5 +69,6 @@ desktop-file-install %{buildroot}%{_datadir}/applications/com.github.wwmm.%{name
 %{_datadir}/help/C/%{name}/*
 %{_datadir}/help/pt_BR/%{name}/*
 %{_datadir}/help/ru/%{name}/*
+%{_datadir}/help/it_IT/%{name}/
 %{_datadir}/dbus-1/services/com.github.wwmm.pulseeffects.service
 %{_libdir}/gstreamer-1.0/libgst*.so
