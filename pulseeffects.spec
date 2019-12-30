@@ -69,5 +69,6 @@ desktop-file-install %{buildroot}%{_datadir}/applications/com.github.wwmm.%{name
 %{_datadir}/help/C/%{name}/*
 %{_datadir}/help/pt_BR/%{name}/*
 %{_datadir}/help/ru/%{name}/*
+%{_datadir}/help/it_IT/%{name}/
 %{_datadir}/dbus-1/services/com.github.wwmm.pulseeffects.service
 %{_libdir}/gstreamer-1.0/libgst*.so
