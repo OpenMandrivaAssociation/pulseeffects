@@ -41,6 +41,9 @@ equalizer and auto volume effects for PulseAudio applications.
 rm -rf build && mkdir build
 
 %build
+export CC=gcc
+export CXX=g++
+
 export LC_ALL="${LC_ALL:-UTF-8}"
 pushd build
 meson --prefix=/usr ..
