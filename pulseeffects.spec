@@ -1,6 +1,6 @@
 Name:           pulseeffects
 Version:        4.8.2
-Release:        1
+Release:        2
 Summary:        Audio equalizer, filters and effects for Pulseaudio applications
 License:        GPLv3
 Group:          Sound/Mixers
@@ -42,16 +42,16 @@ rm -rf build && mkdir build
 
 %build
 export LC_ALL="${LC_ALL:-UTF-8}"
-pushd build
+cd build
 meson --prefix=/usr ..
 %ninja_build
-popd
+cd ..
 
 %install
 export LC_ALL="${LC_ALL:-UTF-8}"
-pushd build
+cd build
 %ninja_install
-popd
+cd ..
 
 desktop-file-install %{buildroot}%{_datadir}/applications/com.github.wwmm.%{name}.desktop \
     --add-category='X-Mageia-CrossDesktop' \
