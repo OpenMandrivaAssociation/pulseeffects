@@ -25,11 +25,13 @@ BuildRequires:  pkgconfig(libpulse)
 BuildRequires:  pkgconfig(lilv-0)
 BuildRequires:  pkgconfig(sigc++-2.0)
 BuildRequires:  pkgconfig(sndfile)
+BuildRequires:  pkgconfig(rnnoise)
 
 Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-good
 Requires:       swh-plugins
 Requires:       lsp-plugins
+Requires:       %{_lib}rnnoise0
 # Recommends because is optional and in contrib/unsupported repo
 Recommends:     lv2-calf-plugins
 Recommends:     rubberband
