@@ -1,6 +1,6 @@
 Name:           pulseeffects
-Version:        4.8.2
-Release:        2
+Version:        4.8.3
+Release:        1
 Summary:        Audio equalizer, filters and effects for Pulseaudio applications
 License:        GPLv3
 Group:          Sound/Mixers
@@ -26,11 +26,21 @@ BuildRequires:  pkgconfig(lilv-0)
 BuildRequires:  pkgconfig(sigc++-2.0)
 BuildRequires:  pkgconfig(sndfile)
 
-#Need import.
 Requires:       gstreamer1.0-plugins-bad
 Requires:       gstreamer1.0-plugins-good
-#Requires:       ladspa-plugins-swh
+Requires:       swh-plugins
+Requires:       lsp-plugins
+# Recommends because is optional and in contrib/unsupported repo
 Recommends:     lv2-calf-plugins
+Recommends:     rubberband
+# Not packaged yet
+Recommends:     mda-lv2
+Recommends:     ladspa-zam-plugins
+Recommends:     lv2-zam-plugins
+Recommends:     zam-plugins
+
+# Need for RNNoise
+#Recommends: RNNoise
 
 %description
 Limiters, compressor, reverberation, high-pass filter, low pass filter,
