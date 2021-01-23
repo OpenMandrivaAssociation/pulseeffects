@@ -1,3 +1,6 @@
+# Do not upgrade to 5.0.X branch. 5.0.X switched from PulseAudio to PipeWire. 
+# Upgrade it only when we switch to PipeWire.
+
 Name:           pulseeffects
 Version:        4.8.4
 Release:        1
@@ -66,7 +69,7 @@ cd build
 cd ..
 
 desktop-file-install %{buildroot}%{_datadir}/applications/com.github.wwmm.%{name}.desktop \
-    --add-category='X-Mageia-CrossDesktop' \
+    --add-category='X-OpenMandriva-CrossDesktop' \
     --dir=%{buildroot}%{_datadir}/applications
 
 %find_lang %{name}
