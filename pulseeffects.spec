@@ -3,7 +3,7 @@
 
 Name:           pulseeffects
 Version:        4.8.4
-Release:        1
+Release:        2
 Summary:        Audio equalizer, filters and effects for Pulseaudio applications
 License:        GPLv3
 Group:          Sound/Mixers
