@@ -2,8 +2,8 @@
 # Upgrade it only when we switch to PipeWire.
 
 Name:           pulseeffects
-Version:        4.8.4
-Release:        3
+Version:        4.8.7
+Release:        1
 Summary:        Audio equalizer, filters and effects for Pulseaudio applications
 License:        GPLv3
 Group:          Sound/Mixers
@@ -52,7 +52,7 @@ Limiters, compressor, reverberation, high-pass filter, low pass filter,
 equalizer and auto volume effects for PulseAudio applications.
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n easyeffects-4.8.7
 rm -rf build && mkdir build
 
 %build
